@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--© Vince Vagay-->
+  <!--This page took 10 Hours to code-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beautiful NZ - Vince Vagay</title>
+  <link rel="stylesheet" href="mystyle.css" type="text/css">
+</head>
+
+<style>
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none; 
+}
+
+li {
+  height: 15vw;
+  flex-grow: 1;
+}
+
+li:last-child {
+  flex-grow: 0;
+}
+
+img {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+</style>
+<!--Header contains logo and title-->
+<header id="header" class="header">
+    <!--For title of page-->
+    <div class="flexbox wrapper" style="margin-top: -10px; margin-right: -8px; margin-left: -8px;">
+        <h1 style="font-family: Verdana;font-size:3vw; color: white;">Beautiful <br> New Zealand</h1> 
+    </div>
+    <img class="non zLayer0" src="Images/Header.png" alt="Header Image" style="width: 101.4%; margin-left: -10px;"/>
+    <div class="zLayer99">
+        <img  class="non"src="Images/HeaderLogo.png" alt="HeaderLogo" style="width: 20%; margin-left: -10px; margin-top:-100%"/>
+    </div>
+</header>
+<!--Header ends here-->
+<!--Body starts here-->
+<body>
+</div> 
+<!--Navigation starts here-->
+<!--Links to parts of website-->
+<div class="nav" id="nav">
+<div style="text-align: center; background-color: #8ac353; font-family: 'Verdana'; font-size: 2vw; padding-top: 0.2vw; padding-bottom: 0.5vw;">
+  <a class = "nav" href="index.html" style="color: white;">Home </a> 
+  <a class = "nav" href="theme.html" style="color: white;">|Destinations|</a> 
+  <a class = "nav" href="parallax.html" style="color: white;">Landscape|</a> 
+  <a class = "nav" href="video.html" style="color: white;">Videos|</a> 
+  <a class = "nav" href="gallery.html" style="color: white;">Gallery|</a> 
+  <a class = "nav" href="visit.html" style="color: white;">Visit|</a> 
+  <a class = "nav" href="references.html" style="color: white;">References</a> 
+</div>
+
+<!--Sidebar navigation, scrolls you to section on current page-->
+<div class="container" style="margin-top: 1%;">
+  <nav>
+      <ul>
+          <li class = "link"><a href="#Section1" style="color: white">Cape Reinga</a></li>
+          <li class = "link"><a href="#Section2" style="color: white">Cathedral Cove</a></li>
+          <li class = "link"><a href="#Section3" style="color: white">Wai-O-Tapu</a></li>
+          <li class = "link"><a href="#Section4" style="color: white">Tongariro National Park</a></li>
+          <li class = "link"><a href="#Section5" style="color: white">Hokitika Gorge</a></li>
+          <li class = "link"><a href="#Section6" style="color: white">Lake Tekapo</a></li>
+          <li class = "link"><a href="#Section7" style="color: white">Wanaka</a></li>
+          <li class = "link"><a href="#Section8" style="color: white">Queenstown</a></li>
+      </ul>
+  </nav>
+</div>
+</div>
+<!--Js to make nav scroll with page-->
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var nav = document.getElementById("nav");
+  var sticky = nav.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      nav.classList.add("sticky");
+    } else {
+      nav.classList.remove("sticky");
+    }
+  }
+</script>
+
+<!--Navigation ends here-->
+
+<!--Start of flexboxes to divide webpage-->
+
+<!--Each section follows the same uniformity: image on left, heading on right, text on Right below heading-->
+<div class="flexbox"  id="header">
+  <!--Header is centred with a large font size-->
+  <div style="font-size:1.5vw;text-align:left;">
+    <br>
+    <h1>New Zealand Tourist Destinations<br><br id="Section1"></h1>
+    <h3>Cape Reinga</h3>
+    <p>Located at the top most part of New Zealand, you can see the two oceans meet, the Tasman Sea and the Pacific Ocean. It features an iconic white lighthouse. According to Māori legend, this is where the spirits of the dead depart into the ocean and return to Hawaiki.</p>
+    <ul class="frame" style="margin-left: -40px; margin-top: 0px; margin-bottom: 0px;">
+        <li>
+            <a href="https://stock.adobe.com/nz/images/cape-reinga-lighthouse-panorama/284078011">
+          <img src="https://t3.ftcdn.net/jpg/02/84/07/80/240_F_284078011_RPVmG6CSqjMeiMvdQbWZWxZYzBYGwhhE.jpg" loading="lazy">
+          </a>
+        </li>
+        <li>
+            <a href="https://stock.adobe.com/nz/images/cape-reinga-lighthouse-north-edge-of-new-zealand/62454731">
+            <img src="https://t4.ftcdn.net/jpg/00/62/45/47/240_F_62454731_gMg3gojQ6uo9wR8643UrlEShTGvbY4l5.jpg" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://stock.adobe.com/nz/images/lighthouse-at-cape-reinga-new-zealand/191710326 ">
+            <img src="https://t4.ftcdn.net/jpg/01/91/71/03/240_F_191710326_Ro8KRxjsl8GRufAMTnvetOTlT4stkOK1.jpg" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://stock.adobe.com/nz/images/the-historic-lighthouse-at-cape-reinga-at-the-northern-tip-of-new-zealand-a-signpost-shows-the-distances-to-various-parts-of-the-globe/409905213 ">
+            <img src="https://t3.ftcdn.net/jpg/04/09/90/52/240_F_409905213_BD5NsPXFd2fRZ3HPaNTM9R0nlwlGJu7K.jpg" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://stock.adobe.com/nz/images/cape-reinga-the-top-of-the-north-island-in-new-zealand/250320862">
+            <img src="https://t3.ftcdn.net/jpg/02/50/32/08/240_F_250320862_l1k6yTrYA5NjOsLhQvA6s5xF538iokZP.jpg" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://stock.adobe.com/nz/images/stunning-wide-angle-aerial-drone-view-of-cape-reinga-lighthouse-at-cape-reinga-the-northernmost-point-of-the-north-island-of-new-zealand-the-lighthouse-is-a-famous-tourist-attraction/194560894 
+            ">
+            <img src="https://t3.ftcdn.net/jpg/01/94/56/08/240_F_194560894_61BRfVgxFJBOhwdCGESa50PnQaTO0hdx.jpg" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://stock.adobe.com/nz/images/cape-reinga-top-of-new-zealand-at-sunrise/331575378">
+            <img src="https://t4.ftcdn.net/jpg/03/31/57/53/240_F_331575378_P4YLcraShpQktrUjNh76qJ7ehtdBCOzS.jpg" loading="lazy">
+            </a>
+        </li>
+        <!--Adding an empty <li> here so the final photo doesn't stretch like crazy-->
+        <li></li>
+      </ul>
+      <br id="Section2"><br>
+    <h3>Cathedral Cove</h3>
+    <p>Accessible by walk or on boat, this beautiful landscape has been carved over thousands of years. The beach has white sands shaded by pohutukawa trees. A perfect secluded place for a picnic.</p>
+    <ul class="frame" style="margin-left: -40px; margin-top: 0px; margin-bottom: 0px;">
+          <li>
+            <a href="https://stock.adobe.com/nz/images/cathedral-cove-new-zealand/96521665">
+            <img src="https://t3.ftcdn.net/jpg/00/96/52/16/240_F_96521665_looac14dT45ydHxG2CvkZjX46t1LFxyr.jpg" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://stock.adobe.com/nz/images/arial-view-of-cathedral-cove-in-coromandel-peninsula-new-zealand/230643691">
+            <img src="https://t3.ftcdn.net/jpg/02/30/64/36/240_F_230643691_Gcw8M54DraNtTPgiq4cE6cgNPV7SXLJd.jpg" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://stock.adobe.com/nz/images/aerial-view-of-cathedral-cove-at-sunset-coromandel-peninsula-new-zealand/321454771">
+            <img src="https://t4.ftcdn.net/jpg/03/21/45/47/240_F_321454771_AFk0jggxK6c71oS5Fx6J2QbDWjy9rhUs.jpg" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://stock.adobe.com/nz/images/cathedral-cove/132900581">
+            <img src="https://t4.ftcdn.net/jpg/01/32/90/05/240_F_132900581_YwWLg8BVUw9dQELHDWYwwk2KFLDgZr4y.jpg" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://stock.adobe.com/nz/images/panoramic-picture-of-cathedral-cove-beach-in-summer-without-people-during-daytime/310470220">
+            <img src="https://t3.ftcdn.net/jpg/03/10/47/02/240_F_310470220_Y2HSn9qLQmVxF8JfqzOM7gUgkLDWMbtk.jpg" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.istockphoto.com/photo/sandstone-rock-monolith-cathedral-cove-at-sunrise-coromandel-new-zealand-gm1317728619-405071684">
+            <img src="https://media.istockphoto.com/photos/sandstone-rock-monolithcathedral-cove-at-sunrisecoromandelnew-zealand-picture-id1317728619?k=20&m=1317728619&s=612x612&w=0&h=tKdaY2ltWQdFcL2wtnd5P1BOScDR4dZib_LiZ9-V8PU=" loading="lazy">
+            </a>
+        </li>
+        <!--Adding an empty <li> here so the final photo doesn't stretch like crazy-->
+        <li></li>
+      </ul>
+      <br id="Section3"><br>
+    <h3>Wai-O-Tapu</h3>
+    <p>The Māori translation for “sacred waters”. A showcase of geothermal activity. Known for its hot springs, boiling mud pools and geysers.</p>
+    <ul class="frame" style="margin-left: -40px; margin-top: 0px; margin-bottom: 0px;">
+        <li>
+            <a href="https://stock.adobe.com/nz/images/thermal-lake-champagne-pool-at-waiotapu-new-zealand/85392936">
+            <img src="https://t4.ftcdn.net/jpg/00/85/39/29/240_F_85392936_XiqlDVrsvW4SPE53lUjmHcQdQUejPr6n.jpg" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://stock.adobe.com/nz/images/beautiful-view-of-emerald-lake-in-waiotapu-thermal-wonderland-new-zealand/410864331">
+            <img src="https://t4.ftcdn.net/jpg/04/10/86/43/240_F_410864331_jmyPKRr6lFYSoOD1hQCJt0qsmDyBysSY.jpg" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://stock.adobe.com/nz/images/cloudy-morning-at-the-waiotapu-thermal-wonderland-with-greenery-blowing-in-the-wind/501384094">
+            <img src="https://t3.ftcdn.net/jpg/05/01/38/40/240_F_501384094_oam25gLmw1cfQGfzzvgDSXMLAYZy31rS.jpg" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://stock.adobe.com/nz/images/devil-s-bath-pool-waiotapu-new-zealand/66913253">
+            <img src="https://t3.ftcdn.net/jpg/00/66/91/32/240_F_66913253_2mKQp0LRINMlJ2AKehFzyDYsvy4uobEh.jpg" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://stock.adobe.com/nz/images/geyser-de-waiotapu-nouvelle-zelande/415851203">
+            <img src="https://t3.ftcdn.net/jpg/04/15/85/12/240_F_415851203_ANdkTKSuInAmIEnTAULDJZbud18zIvGJ.jpg" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://stock.adobe.com/nz/images/geothermal-landscape-with-hot-boiling-mud-and-sulphur-springs-due-to-volcanic-activity-in-wai-o-tapu-thermal-wonderland-new-zealand/341630430">
+            <img src="https://t3.ftcdn.net/jpg/03/41/63/04/240_F_341630430_p2GPW09Gu8IU7EApfdnBruJvORokT3V9.jpg" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://stock.adobe.com/nz/images/thermal-lake-champagne-pool-at-wai-o-tapu-new-zealand/82854505">
+            <img src="https://t4.ftcdn.net/jpg/00/82/85/45/240_F_82854505_FiU0aC8bNl5B82h5kDhHqDTnn3tVIbQO.jpg" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.gettyimages.co.nz/detail/photo/lady-knox-geyser-royalty-free-image/1067140650">
+            <img src="https://media.gettyimages.com/photos/lady-knox-geyser-picture-id1067140650?k=20&m=1067140650&s=612x612&w=0&h=1w0RcMeGggHnl_BowH0mDNnHdd7qWfIl93V3HeXMPzQ=" loading="lazy">
+            </a>
+        </li>
+        <!--Adding an empty <li> here so the final photo doesn't stretch like crazy-->
+        <li></li>
+      </ul>
+      <br id="Section4"><br>
+    <h3>Tongariro National Park</h3>
+    <p>Has three active volcanic mountains, Mount Ruapehu, Mount Tongariro and Mount Ngauruhoe. World class hikes. The famous Tongariro Alpine Crossing is a 19km hike over Mt. Tongariro.</p>
+    <ul class="frame" style="margin-left: -40px; margin-top: 0px; margin-bottom: 0px;">
+        <li>
+            <a href="https://www.gettyimages.co.nz/detail/photo/scenic-landscape-with-ngauruhoe-volcano-at-sunset-royalty-free-image/578363221">
+            <img src="https://media.gettyimages.com/photos/scenic-landscape-with-ngauruhoe-volcano-at-sunset-picture-id578363221?k=20&m=578363221&s=612x612&w=0&h=EIHts_mBm4FPewXUn9qu3Aj2mNGO2jzGSRTIP_uR8kg=" loading="lazy">
+            </a>
+        </li><li>
+            <a href="https://www.gettyimages.co.nz/detail/photo/new-zealand-north-island-diminishing-perspective-of-royalty-free-image/1199644137">
+            <img src="https://media.gettyimages.com/photos/new-zealand-north-island-diminishing-perspective-of-state-highway-48-picture-id1199644137?k=20&m=1199644137&s=612x612&w=0&h=AVNj8StMUQmcQvvsb1hweCw03EoQ0YKqMooRk5b3hcE=" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.gettyimages.co.nz/detail/photo/mount-ruapehu-royalty-free-image/1285411831">
+            <img src="https://media.gettyimages.com/photos/mount-ruapehu-picture-id1285411831?k=20&m=1285411831&s=612x612&w=0&h=-eUZV3vsujPD1_bkxF5xh3iHqo2TbZTIw7dcUKspe3w=" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.gettyimages.co.nz/detail/photo/new-zealand-oceania-north-island-tongariro-national-royalty-free-image/1199644365">
+            <img src="https://media.gettyimages.com/photos/new-zealand-oceania-north-island-tongariro-national-park-north-island-picture-id1199644365?k=20&m=1199644365&s=612x612&w=0&h=VLrArDbYHGDAi2ney-Jz3hfXk8Hud2ve9OOUQX5KZLs=" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.gettyimages.co.nz/detail/photo/mount-ngauruhoe-at-dawn-tongariro-national-park-new-royalty-free-image/970850098">
+            <img src="https://media.gettyimages.com/photos/mount-ngauruhoe-at-dawn-tongariro-national-park-new-zealand-picture-id970850098?k=20&m=970850098&s=612x612&w=0&h=MNjDLTfwS_wqJEgC_dhsErPpfB_M_XMZbnHqSkoKQw8=" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.gettyimages.co.nz/detail/photo/tongariro-crossing-new-zealand-royalty-free-image/1201297916">
+            <img src="https://media.gettyimages.com/photos/tongariro-crossing-new-zealand-picture-id1201297916?k=20&m=1201297916&s=612x612&w=0&h=K9wkSsyONL8qWr_PPRhoYROV4UnjyZAaR1Ku6oxGrg8=" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.gettyimages.co.nz/detail/photo/ruapehu-mountain-royalty-free-image/152677501">
+            <img src="https://media.gettyimages.com/photos/ruapehu-mountain-picture-id152677501?k=20&m=152677501&s=612x612&w=0&h=gvOEz5RcclZ6NRT1PW7_4ANseYaF1anQ0kO8ctebjuQ=" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.gettyimages.co.nz/detail/photo/aerial-view-blue-lake-in-front-mount-ngauruhoe-and-royalty-free-image/1268583442">
+            <img src="https://media.gettyimages.com/photos/aerial-view-blue-lake-in-front-mount-ngauruhoe-and-ruapehu-in-the-picture-id1268583442?k=20&m=1268583442&s=612x612&w=0&h=wBJ5mPkcyOevOyQ9pWCIrpnK1QBuSL78GosBgPe_H04=" loading="lazy">
+            </a>
+        </li>
+        <!--Adding an empty <li> here so the final photo doesn't stretch like crazy-->
+        <li></li>
+      </ul>
+      <br id="Section5"><br>
+    <h3>Hokitika Gorge</h3>
+    <p>Walk across turquoise waters surrounded by native rimu and podocarp forest.</p>
+    <ul class="frame" style="margin-left: -40px; margin-top: 0px; margin-bottom: 0px;">
+        <li>
+            <a href="https://unsplash.com/photos/rSqZN2Tr-w0">
+            <img src="https://images.unsplash.com/photo-1544195300-abdba060cf1f?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://unsplash.com/photos/zfBSTK1X1Oo">
+            <img src="https://images.unsplash.com/photo-1595566205589-9c387bbf78a4?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://unsplash.com/photos/F_sB2qm9_3k">
+            <img src="https://images.unsplash.com/photo-1587018781226-e275c4ede9ea?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://unsplash.com/photos/OqZwQAh3Nf0">
+            <img src="https://images.unsplash.com/photo-1601537696848-be73ec21ffaa?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.istockphoto.com/photo/hokitika-gorge-gm1315537895-403490868">
+            <img src="https://media.istockphoto.com/photos/hokitika-gorge-picture-id1315537895?k=20&m=1315537895&s=612x612&w=0&h=NZsw61qlkareFHyYYyvup-ZzgqaeDOUvhiM_D-u7gaw=" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://stock.adobe.com/nz/images/hokitika-gorge-hokitika-new-zealand/65534000">
+            <img src="https://t3.ftcdn.net/jpg/00/65/53/40/240_F_65534000_PVNfrMKAOSppUJWNSdTwOpKYPbaNstu7.jpg" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.istockphoto.com/photo/hokitika-gorge-new-zealand-gm903232780-249117796">
+            <img src="https://media.istockphoto.com/photos/hokitika-gorge-new-zealand-picture-id903232780?b=1&k=20&m=903232780&s=170667a&w=0&h=Xc3N7l8_J1FlsCKkeNuzFh9lo3MNAyn2Vf8B7BXb6Gc=" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://stock.adobe.com/nz/images/blue-water-and-rocks-of-the-hokitika-gorge-scenic-reserve-south-island-new-zealand/233172050">
+            <img src="https://t3.ftcdn.net/jpg/02/33/17/20/240_F_233172050_iS0Nnz6puYgXNgg7WzMe2HHYWVmGPIRx.jpg" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://stock.adobe.com/nz/images/blue-water-of-the-hokitika-river-through-the-rock-sided-at-hokitika-gorge-scenic-reserve-west-coast-south-island-new-zealand/365561625">
+            <img src="https://t3.ftcdn.net/jpg/03/92/52/18/240_F_392521867_Iif4iul6IAYzZ2OqruiQG5I66wu9qUPz.jpg" loading="lazy">
+            </a>
+        </li>
+        <!--Adding an empty <li> here so the final photo doesn't stretch like crazy-->
+        <li></li>
+      </ul>
+      <br id="Section6"><br>
+    <h3>Lake Tekapo</h3>
+    <p>One of the perfect spots for stargazing. Home to an iconic church, the Good Shepherd.</p>
+    <ul class="frame" style="margin-left: -40px; margin-top: 0px; margin-bottom: 0px;">
+        <li>
+            <a href="https://www.gettyimages.co.nz/detail/photo/lake-tekapo-at-dawn-new-zealand-south-island-royalty-free-image/860528958">
+            <img class="flip" src="https://media.gettyimages.com/photos/lake-tekapo-at-dawn-new-zealand-south-island-picture-id860528958?k=20&m=860528958&s=612x612&w=0&h=8Cy0y1cvcI4JamhVuh90J-r96_VeBm-UkdU4L0AJq5c=" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.gettyimages.co.nz/detail/photo/lake-pukaki-lupins-royalty-free-image/1165015263">
+            <img src="https://media.gettyimages.com/photos/lake-pukaki-lupins-picture-id1165015263?k=20&m=1165015263&s=612x612&w=0&h=WZkUVdTrmGx90x6XZ2HC8SxxUgMS6eggSuXP5E_MvOc=" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.gettyimages.co.nz/detail/photo/summer-lupins-at-sunrise-at-lake-tekapo-nz-royalty-free-image/137893561">
+            <img src="https://media.gettyimages.com/photos/summer-lupins-at-sunrise-at-lake-tekapo-nz-picture-id137893561?k=20&m=137893561&s=612x612&w=0&h=aQnSIGIbt5xDEgI2QjvoNQBI_yEH1auFww1a8dbB_1U=" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.gettyimages.co.nz/detail/photo/scenic-view-of-lake-by-snowcapped-mountains-against-royalty-free-image/1036365902">
+            <img src="https://media.gettyimages.com/photos/scenic-view-of-lake-by-snowcapped-mountains-against-sky-picture-id1036365902?k=20&m=1036365902&s=612x612&w=0&h=UVJoE7lhejBE09PwVeygrsGjJOJCpZICmyLca9dQiuA=" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.gettyimages.co.nz/detail/photo/church-of-the-good-shepherd-and-milky-way-with-royalty-free-image/905798606">
+            <img src="https://media.gettyimages.com/photos/church-of-the-good-shepherd-and-milky-way-with-lupins-blooming-lake-picture-id905798606?k=20&m=905798606&s=612x612&w=0&h=pI1Xtk4ZwmW-dFyTZy-TI7Z1llCyi9CRJuNi9eP72n0=" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.gettyimages.co.nz/detail/photo/tekapo-lake-aoraki-mount-cook-new-zealand-royalty-free-image/1153845611">
+            <img src="https://media.gettyimages.com/photos/tekapo-lake-aoraki-mount-cook-new-zealand-picture-id1153845611?k=20&m=1153845611&s=612x612&w=0&h=IHCBSvUwfs-rrU8ZN3UaucjuERwiaV3V-S1SeiF-6fc=" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.gettyimages.co.nz/detail/photo/lake-tekapo-night-sky-new-zealand-royalty-free-image/603028792">
+            <img src="https://media.gettyimages.com/photos/lake-tekapo-night-sky-new-zealand-picture-id603028792?k=20&m=603028792&s=612x612&w=0&h=OTBKzXHGgVM8WN2FjLgaq2VHRcM0IaulgciG5TfCEjc=" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.gettyimages.co.nz/detail/photo/milky-way-rising-above-church-of-good-shepherd-royalty-free-image/1196826510">
+            <img src="https://media.gettyimages.com/photos/milky-way-rising-above-church-of-good-shepherd-tekapo-new-zealand-picture-id1196826510?k=20&m=1196826510&s=612x612&w=0&h=ZNJGMYtgRLYIvZ1WNoXrk_wCH6wvo5GVy5kHsWc0fR8=" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.gettyimages.co.nz/detail/photo/milky-way-rising-above-church-of-good-shepherd-royalty-free-image/1197100452">
+            <img src="https://media.gettyimages.com/photos/milky-way-rising-above-church-of-good-shepherd-tekapo-new-zealand-picture-id1197100452?k=20&m=1197100452&s=612x612&w=0&h=jnQleLYsWiFv5Lv3WwkVDiXqEZXspkSZHlgycxeNLBw=" loading="lazy">
+            </a>
+        </li>
+        <!--Adding an empty <li> here so the final photo doesn't stretch like crazy-->
+        <li></li>
+      </ul>
+      <br id="Section7"><br>
+    <h3>Wanaka</h3>
+    <p>A popular ski destination that doubles as a great summer get-away town. Home to the most photographed tree in New Zealand titled 'That Wanaka Tree' a willow tree that sits alone on Lake Wānaka.</p>
+    <ul class="frame" style="margin-left: -40px; margin-top: 0px; margin-bottom: 0px;">
+        <li>
+            <a href="https://unsplash.com/photos/DXu4o-QI1VY">
+            <img src="https://images.unsplash.com/photo-1533883355737-25ab4d1fbefb?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://unsplash.com/photos/H-TW2CoNtTk">
+            <img src="https://images.unsplash.com/photo-1557589747-a830b99db298?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://unsplash.com/photos/UpR6FBeVvto">
+            <img src="https://images.unsplash.com/photo-1590394360184-26846f8ae95e?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://unsplash.com/photos/U_NkHa7T7mA">
+            <img src="https://images.unsplash.com/photo-1617879017517-89f71166c4c8?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.istockphoto.com/photo/lake-wanaka-from-roys-peak-gm922872848-253343717">
+            <img src="https://media.istockphoto.com/photos/lake-wanaka-from-roys-peak-picture-id922872848?k=20&m=922872848&s=612x612&w=0&h=C32YvI0yPpD46SDoUc4a_kY2iWhcEVRf8M-nuBfsSTA=" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://unsplash.com/photos/tks_p1TFnUc">
+            <img src="https://images.unsplash.com/photo-1638888813427-3f699bf8bf6e?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.istockphoto.com/photo/single-boat-on-lake-wanaka-at-roys-bay-wanaka-town-new-zealand-gm1065531794-284940122">
+            <img src="https://media.istockphoto.com/photos/single-boat-on-lake-wanaka-at-roys-bay-wanaka-town-new-zealand-picture-id1065531794?k=20&m=1065531794&s=612x612&w=0&h=dtZLVhCxn97jT5j4_lABqrhgx_YiT6N4u19kLBuDisc=" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.istockphoto.com/photo/stars-over-the-tree-at-lake-wanaka-in-new-zealand-gm873593426-243957416">
+            <img src="https://media.istockphoto.com/photos/stars-over-the-tree-at-lake-wanaka-in-new-zealand-picture-id873593426?k=20&m=873593426&s=612x612&w=0&h=-jfLA1ar5JK0QG3n5mN56UeMtSCzN7d1n3oP8KjDtW4=" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.istockphoto.com/photo/lake-wanaka-gm139392954-433376">
+            <img src="https://media.istockphoto.com/photos/lake-wanaka-picture-id139392954?k=20&m=139392954&s=612x612&w=0&h=Dxk11STBpgHfhZTZ2uVAcZw21bJ7bIbRaMItmXHHn98=" loading="lazy">
+            </a>
+        </li>
+        <!--Adding an empty <li> here so the final photo doesn't stretch like crazy-->
+        <li></li>
+      </ul>
+      <br id="Section8"><br>
+    <h3>Queenstown</h3>
+    <p>A very popular tourist destination with a plethora of outdoor activities, from skiing, bungy jumping, skydiving, jet boating and more. Located alongside Lake Wakatipu, there's stunning views to wake up to every day you're there.</p>
+    <ul class="frame" style="margin-left: -40px; margin-top: 0px; margin-bottom: 0px;">
+        <li>
+            <a href="https://stock.adobe.com/nz/images/aerial-view-of-queenstown-downtown-at-twilight-sunset-south-island-new-zealand/238212130">
+            <img src="https://t4.ftcdn.net/jpg/02/38/21/21/240_F_238212130_nzy3PSLBqhQZzW2XXzQIQedXzkDZjDkM.jpg" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://unsplash.com/photos/Plx_VMozId4">
+            <img src="https://images.unsplash.com/photo-1598525024848-f2d50bbbfe03?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://stock.adobe.com/nz/images/queenstown-at-dusk-new-zealand/122320976">
+            <img src="https://t4.ftcdn.net/jpg/01/22/32/09/240_F_122320976_g6FKzIYBsrlaSHOAeB3WThHtyMBbp2TM.jpg" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://unsplash.com/photos/5BuxuWIJF1Q">
+            <img src="https://images.unsplash.com/photo-1547314283-befb6cc5cf29?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://unsplash.com/photos/czeSSWVUmKg">
+            <img src="https://images.unsplash.com/photo-1590829483612-2b44ce77a787?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://pixabay.com/photos/tss-earnslaw-lake-wakatipu-lake-new-1722727/">
+            <img src="https://cdn.pixabay.com/photo/2016/10/07/22/24/tss-earnslaw-1722727_1280.jpg" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://unsplash.com/photos/jzvEmwf4Vls">
+            <img src="https://images.unsplash.com/photo-1600476019922-fb69c71b0b53?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=385" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://pixabay.com/photos/rafting-canyon-valley-nature-rock-215691/">
+            <img src="https://cdn.pixabay.com/photo/2013/11/22/15/33/rafting-215691_1280.jpg" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://stock.adobe.com/nz/images/queenstown-in-new-zealand-the-city-of-adventure-and-nature/197960251">
+            <img src="https://t3.ftcdn.net/jpg/01/97/96/02/240_F_197960251_QlCLGI8Nq3otNRG96n7L3JJdB00E7XlN.jpg" loading="lazy">
+            </a>
+        </li>
+        <li>
+            <a href="https://pixabay.com/photos/new-zealand-queenstown-paradise-2490423/">
+            <img src="https://cdn.pixabay.com/photo/2017/07/10/15/26/new-zealand-2490423_1280.jpg" loading="lazy">
+            </a>
+        </li>
+        
+        <!--Adding an empty <li> here so the final photo doesn't stretch like crazy-->
+        <li></li>
+      </ul>
+      <br>
+      <p style="text-align: center; padding-bottom: 1%;">New Zealand is home to many beautiful views, this is only a glimpse of what's it has to offer.</p>
+    </div>
+</div>
+</div>
+</body>
+<!--Body ends here-->
+<!--Link to scroll you back to top of page-->
+<div style="text-align: center;">
+<a style="color:#000000;" href="#header">Back to top</a>
+<br><br><br>
+<!--Footer that travels with you at the bottom of page-->
+<footer>
+<!--Copyrighted by me-->
+<span style="float: right; margin-right:25px;">© Vince Vagay | 2022</span>
+</footer>
+
+</html>

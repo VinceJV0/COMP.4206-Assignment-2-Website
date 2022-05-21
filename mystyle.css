@@ -1,26 +1,46 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Rubik&family=Source+Sans+Pro&display=swap');
+
   /*Smooth scrolling*/
   html {
     scroll-behavior: smooth;
   }
-  /*Blue background colour with 'Rubik' font*/
+  /*Green background colour with 'Rubik' font*/
   body{
     background-color: #B4D87D;
     font-family: 'Rubik', sans-serif;
+  }
+  /*Main header top left*/
+  h1{
+    padding-left: 2%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
   }
   /*Headers are centered with a font size and font of Source Sans Pro*/
   h2{
     text-align: center;
     font-size: 5vw;
+    padding-top: 1%;
     margin-top: 1px;
-    margin-bottom: -3px;
+    margin-bottom: 5px;
     font-family: 'Source Sans Pro', sans-serif;
   }
   /*Subheaders are aligned left with a font size and font of Source Sans Pro*/
   h3{
+    padding-left: 2%;
     text-align: left;
     font-size: 2.5vw;
     margin-top: 1px;
     margin-bottom: -3px;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  p{
+    padding-left: 2%;
+    padding-right: 10%;
+    text-align: left;
+    font-size: 1.5vw;
+    margin-top: 1%;
+    margin-bottom: 1%;
     font-family: 'Source Sans Pro', sans-serif;
   }
   /*Audios are a certain dimension*/
@@ -53,8 +73,8 @@
   .flexbox > div {
     flex-wrap: wrap;
     background-color: #ffffff;
-    width: 98%;
-    height: 98%;
+    width: 100%;
+    height: 100%;
     margin: 4%;
     text-align: left;
     font-size: 120%;
@@ -62,7 +82,6 @@
     flex-wrap: wrap;
     display: flow-root;
     font-family: 'Rubik', sans-serif;
-    padding-bottom: 10px;
   }
   /*Images in flexboxes are always on the left and have a background color of white, incase the image is transparent*/
   .flexbox > img {
@@ -71,7 +90,6 @@
     min-width: 100%;
     vertical-align: bottom;
     background-color: white;
-    z-index: 0;
   }
   /*Defines headers over image in flexbox*/
   .flexbox > h1{
@@ -82,7 +100,6 @@
     left: 50%;
     margin-top: 10vw;
     transform: translate(-50%, -50%);
-    z-index: 1;    
   }
   /*Nav bar is given chosen elements*/
     .nav { /*Navigation bar links to different parts of page*/
@@ -93,7 +110,7 @@
     width: 101.3%;
     text-align: center;
     text-shadow: 1px 1px 2px black;
-    z-index: 0;
+    z-index: 100;
   }
   
   /*Makes nav bar stick to top on scroll*/
@@ -128,6 +145,7 @@
 /*Contains sidebar*/
   .container{
     width:25px;
+    height: 83%;
     background:rgba(0, 0, 0, 0.2);
     position: fixed;
     padding:0px 0px 0px 0px;
@@ -188,3 +206,25 @@
     transform:translateY(0%) translateZ(0) scale(1.1);
     font-weight:600;
  }
+
+ /*Contents*/
+
+ .frame{
+  width: 100%;
+  height: 100%;
+  max-width: 110%;
+  margin-bottom: -4px;
+  flex-wrap: wrap;
+  word-wrap: break-word;
+ }
+
+ /*Clear any styling*/
+.non{
+  all: unset
+}
+
+/*Flip 180 Horizontally*/
+.flip{
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
