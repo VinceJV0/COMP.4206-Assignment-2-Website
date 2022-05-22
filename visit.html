@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--© Vince Vagay-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beautiful Japan - Vince Vagay</title>
+  <link rel="stylesheet" href="mystyle.css" type="text/css">
+</head>
+
+<style>
+    .flexbox{ 
+    width: 42%; 
+    margin-left: 26.5%;
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-top: 1.5%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #bd1111;
+    border-radius: 10px 10px 10px 10px;
+    height: 100%;
+    margin-top: 20px;
+    text-align: center;
+    z-index: 2;
+    transition: width 0.05s;
+    transition: margin-left 0.09s;
+    }
+    /*Increase width and go left*/
+    .increase{
+    width: 80%;
+    margin-left: 10%;
+    padding: 0%;
+    }
+    /* Create two equal columns that floats next to each other */
+    .column {
+    float: left;
+    width: 33.33%;
+    }
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none; 
+    }
+    li {
+    height: 15vw;
+    flex-grow: 1;
+    }
+    .columnFrame{
+    overflow: auto;
+    width: 30%;
+    height: 100%;
+    max-width: 33.33%;
+    margin-bottom: -4px;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    }
+</style>
+
+<!--Header contains logo and title-->
+<header id="header" class="header">
+    <!--For title of page-->
+    <img class="non zLayer0" src="Images/JapanArch.png" alt="Header Image" style=" max-width: 99%; padding-top: 2.6%; margin-left: 1%;">
+    
+    <div class="wrapper" style="margin-top: -10px; margin-right: -8px; margin-left: -8px;">
+        <h1 style="font-family: Verdana;font-size:3vw; color: white; margin-top: -14%">Beautiful <br> Japan</h1> 
+        <br style="padding-bottom: 15%;">
+    </div>
+</header>
+<!--Header ends here-->
+<!--Body starts here-->
+<body style="background-color: #ffb7c5;">
+</div> 
+<!--Navigation starts here-->
+<!--Links to parts of website-->
+<div class="nav" id="nav">
+    <div style="text-align: center; background-color: #bd1111; font-family: 'Verdana'; font-size: 2vw; padding-top: 0.2vw; padding-bottom: 1.3vw;">
+      <a class = "nav" href="index.html" style="color: white;">Home </a> 
+      <a class = "nav" href="theme.html" style="color: white;">|Destinations|</a> 
+      <a class = "nav" href="parallax.html" style="color: white;">Landscape|</a> 
+      <a class = "nav" href="video.html" style="color: white;">Videos|</a> 
+      <a class = "nav" href="gallery.html" style="color: white;">Gallery|</a> 
+      <a class = "nav" href="visit.html" style="color: white;">Visit|</a> 
+      <a class = "nav" href="references.html" style="color: white;">References</a> 
+    </div>
+    
+<!--Sidebar navigation, scrolls you to section on current page-->
+<div class="container" style="margin-top: 1%;">
+  <nav>
+      <ul>
+          <li class = "link"><a href="#Section1" style="color: white">Section 1</a></li>
+          <li class = "link"><a href="#Section2" style="color: white">Section 2</a></li>
+          <li class = "link"><a href="#Section3" style="color: white">Section 3</a></li>
+          <li class = "link"><a href="#Section4" style="color: white">Section 4</a></li>
+          <li class = "link"><a href="#Section5" style="color: white">Section 5</a></li>
+      </ul>
+  </nav>
+</div>
+</div>
+
+<script>
+  /*Js to make nav scroll with page*/
+  window.onscroll = function() {myFunction()};
+  
+  var nav = document.getElementById("nav");
+  var sticky = nav.offsetTop;
+  
+  function myFunction() {
+    var element = document.getElementById("myDiv");
+    if (window.pageYOffset > sticky) {
+      nav.classList.add("sticky");
+    } else {
+      nav.classList.remove("sticky");
+    }
+  } 
+  /*On scroll*/
+  /*Js also to make content window grow in size*/
+  /*Js changes colour of background*/
+  document.getElementById("myDiv").addEventListener("scroll");
+  function myFunction() {
+    var element = document.getElementById("myDiv");
+    flexbox.classList.add("increase");
+    element.style.backgroundColor = "white";
+}
+</script>
+
+
+<!--Navigation ends here-->
+
+<!--Start of flexboxes to divide webpage-->
+
+<!--Each section follows the same uniformity: image on left, heading on right, text on Right below heading-->
+<div class="flexbox" id="flexbox" style="margin-top: 1%;">
+  <!--Header is centred with a large font size-->
+  <div id="myDiv" style="font-size:1.5vw;text-align:left;background-color: #ffb7c5;">
+    <h1>I want to visit<br> Japan<br id="Section1"></h1>
+    <br><br><br><br><br>
+    <div class="row">
+      <div class="column columnFrame" style="max-width: 30%;">
+        <ul>
+          <h3>Heading 1</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        </ul>
+        <ul><img src="Images/9-16.png" style="width: 100%;"></ul>
+      </div>
+      <div class="column columnFrame" style="max-width: 30%;">
+        <ul><img src="Images/9-16.png" style="width: 100%;"></ul>
+        <ul>
+          <h3>Heading 2</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        </ul>
+      </div>
+      <div class="column columnFrame" style="max-width: 30%;">
+        <ul>
+          <h3>Heading 3</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        </ul>
+        <ul><img src="Images/9-16.png" style="width: 100%;"></ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column columnFrame" style="max-width: 30%;">
+        <ul>
+          <h3>Heading 1</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        </ul>
+        <ul><img src="Images/9-16.png" style="width: 100%;"></ul>
+      </div>
+      <div class="column columnFrame" style="max-width: 30%;">
+        <ul><img src="Images/9-16.png" style="width: 100%;"></ul>
+        <ul>
+          <h3>Heading 2</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        </ul>
+      </div>
+      <div class="column columnFrame" style="max-width: 30%;">
+        <ul>
+          <h3>Heading 3</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        </ul>
+        <ul><img src="Images/9-16.png" style="width: 100%;"></ul>
+      </div>
+    </div>
+    
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+  </div>
+</div>
+</body>
+<!--Body ends here-->
+<!--Link to scroll you back to top of page-->
+<div style="text-align: center;">
+<a style="color:#000000;" href="#header">Back to top</a>
+<br><br><br>
+<!--Footer that travels with you at the bottom of page-->
+<footer style="background-color: #bd1111;">
+<!--Copyrighted by me-->
+<span style="float: right; margin-right:25px;">© Vince Vagay | 2022</span>
+</footer>
+
+</html>
