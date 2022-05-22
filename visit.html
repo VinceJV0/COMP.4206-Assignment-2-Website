@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <!--© Vince Vagay-->
+  <!--This page took 3 Hours to code 3 Hours to add content-->
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,6 +38,7 @@
     .column {
     float: left;
     width: 33.33%;
+    padding-left: 1.8%;
     }
     .row:after {
     content: "";
@@ -60,6 +62,9 @@
     margin-bottom: -4px;
     flex-wrap: wrap;
     word-wrap: break-word;
+    }
+    img {
+      width: 100%;
     }
 </style>
 
@@ -106,7 +111,7 @@
 
 <script>
   /*Js to make nav scroll with page*/
-  window.onscroll = function() {myFunction()};
+  window.onscroll = function() {myFunction(), increase()};
   
   var nav = document.getElementById("nav");
   var sticky = nav.offsetTop;
@@ -119,11 +124,11 @@
       nav.classList.remove("sticky");
     }
   } 
+
   /*On scroll*/
   /*Js also to make content window grow in size*/
   /*Js changes colour of background*/
-  document.getElementById("myDiv").addEventListener("scroll");
-  function myFunction() {
+  function increase() {
     var element = document.getElementById("myDiv");
     flexbox.classList.add("increase");
     element.style.backgroundColor = "white";
@@ -141,56 +146,114 @@
   <div id="myDiv" style="font-size:1.5vw;text-align:left;background-color: #ffb7c5;">
     <h1>I want to visit<br> Japan<br id="Section1"></h1>
     <br><br><br><br><br>
+    <h1>Tokyo</h1>
     <div class="row">
       <div class="column columnFrame" style="max-width: 30%;">
         <ul>
-          <h3>Heading 1</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+          <h3>Akihabara</h3>
+            <p>Is the district located in central Tokyo for electronic and otaku goods. They offer many electronics ranging from the newest computers, cameras, televisions, mobile phones, electronics parts and home appliances to second-hand goods.</p>
         </ul>
-        <ul><img src="Images/9-16.png" style="width: 100%;"></ul>
-      </div>
-      <div class="column columnFrame" style="max-width: 30%;">
-        <ul><img src="Images/9-16.png" style="width: 100%;"></ul>
         <ul>
-          <h3>Heading 2</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+          <a href="https://www.gettyimages.co.nz/detail/photo/chrome-plated-dump-truck-in-akihabara-traffic-royalty-free-image/477862608">
+            <img src="https://media.gettyimages.com/photos/chrome-plated-dump-truck-in-akihabara-traffic-picture-id477862608?k=20&m=477862608&s=612x612&w=0&h=a5uBUvabrUKtj24oNt6T-1fxl32OniD8ESHXMAnHA4c=">
+          </a>
         </ul>
       </div>
       <div class="column columnFrame" style="max-width: 30%;">
         <ul>
-          <h3>Heading 3</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+          <a href="https://www.gettyimages.co.nz/detail/photo/cherry-blossoms-in-the-evening-in-naka-meguro-royalty-free-image/96322210">
+          <img src="https://media.gettyimages.com/photos/cherry-blossoms-in-the-evening-in-nakameguro-picture-id96322210?k=20&m=96322210&s=612x612&w=0&h=5qyfh1FbNCkOT5LAl7JHaEXVe4l64reRiTiabn_30Zc=">
+          </a>
+      </ul>
+        <ul>
+          
+            <h3>Meguro River</h3>
+            <p>A stream that runs through Tokyo, during the spring season you will see Cherry Blossom trees and at night it is illuminated.</p>
         </ul>
-        <ul><img src="Images/9-16.png" style="width: 100%;"></ul>
+      </div>
+      <div class="column columnFrame" style="max-width: 30%;">
+        <ul>
+          <h3>Senso-ji Temple, Asakusa</h3>
+            <p>Senso-ji Temple is one of Tokyo's oldest Buddhist temples. When you enter you are greeted by the Kaminarimon (or Thunder Gate). As you walk in you'll see a huge paper lantern painted in red in black.</p>
+        </ul>
+        <ul>
+          <a href="https://www.gettyimages.co.nz/detail/photo/tokyo-senso-ji-temple-pagoda-akasuka-japan-royalty-free-image/1176557010">
+          <img src="https://media.gettyimages.com/photos/tokyo-sensoji-temple-pagoda-akasuka-japan-picture-id1176557010?k=20&m=1176557010&s=612x612&w=0&h=AwudRXKSQq6dwFwBwj6f45swZECqDyeUhn5SRwraMfA=">
+          </a></ul>
       </div>
     </div>
+    <h1>Kyoto</h1>
     <div class="row">
       <div class="column columnFrame" style="max-width: 30%;">
         <ul>
-          <h3>Heading 1</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+          <h3>Fushimi Inari-taisha Shrine</h3>
+            <p>Located in southern Kyoto, famous for its thousands of vermilion torii gates leading into the wooded forest of the sacred Mount Inari. The visually stunning array of torii gates makes for an excellent place for picture taking.</p>
         </ul>
-        <ul><img src="Images/9-16.png" style="width: 100%;"></ul>
-      </div>
-      <div class="column columnFrame" style="max-width: 30%;">
-        <ul><img src="Images/9-16.png" style="width: 100%;"></ul>
         <ul>
-          <h3>Heading 2</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+          <a href="https://www.gettyimages.co.nz/detail/photo/torii-gates-at-fushimi-inari-shrine-kyoto-japan-royalty-free-image/128137157">
+            <img src="https://media.gettyimages.com/photos/torii-gates-at-fushimi-inari-shrine-kyoto-japan-picture-id128137157?k=20&m=128137157&s=612x612&w=0&h=R2FwcKdyCpsMucd4JN6NiN5n4DgOuQhfqDfO9H3miog=">
+          </a>
         </ul>
       </div>
       <div class="column columnFrame" style="max-width: 30%;">
         <ul>
-          <h3>Heading 3</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+          <a href="https://www.gettyimages.co.nz/detail/news-photo/nijo-castle-gate-nijo-castle-or-nijo-jo-was-built-as-news-photo/950552828">
+          <img src="https://media.gettyimages.com/photos/nijo-castle-gate-nijo-castle-or-nijojo-was-built-as-theresidence-picture-id950552828?k=20&m=950552828&s=612x612&w=0&h=_a_ZeO9LiDBklHN5EnYHVMg9cL0vdFiT8zRU_anqzbM=">
+          </a>
+      </ul>
+        <ul>
+            <h3>Nijo Castle</h3>
+            <p>Built in 1603, used as an imperial palace until it was donated to the city and opened to the public. The castle is divided into three areas: the Honmaru(main circle of defense), the Ninomaru (secondary circle of defense) and some gardens that encircle the Honmaru and Ninomaru.</p>
         </ul>
-        <ul><img src="Images/9-16.png" style="width: 100%;"></ul>
+      </div>
+      <div class="column columnFrame" style="max-width: 30%;">
+        <ul>
+          <h3>Arashiyama</h3>
+            <p>Arashiyama, meaning “storm mountains,” is a small town on the Oi River. Filled with temples and shrines, famous for its Bamboo Grove. One of the best sights in Kyoto as you look up at the tall stalks of bamboo, it's other-worldly.</p>
+        </ul>
+        <br>
+        <ul>
+          <a href="https://www.gettyimages.co.nz/detail/photo/bamboo-forest-in-kyoto-japan-royalty-free-image/538786406">
+          <img src="https://media.gettyimages.com/photos/bamboo-forest-in-kyoto-japan-picture-id538786406?k=20&m=538786406&s=612x612&w=0&h=-hGukKzETtRt_WexmMyySRith_PDlfQDgk1D7wntn3U=">
+          </a></ul>
       </div>
     </div>
-    
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
+    <h1>Osaka</h1>
+    <div class="row">
+      <div class="column columnFrame" style="max-width: 30%;">
+        <ul>
+          <h3>Universal Studios Japan</h3>
+            <p>Located in Osaka's Bay area, ranking as the 4th and 5th most visited amusement parks in the world. Opened on the 31st of March 2001, millions of people have visited since. The area is fifty four hectares large, with many attractions based on famous pop culture references.</p>
+        </ul>
+        <ul>
+          <a href="https://www.gettyimages.co.nz/detail/news-photo/general-view-of-the-super-nintendo-world-new-attraction-news-photo/1307668414">
+            <img src="https://media.gettyimages.com/photos/general-view-of-the-super-nintendo-world-new-attraction-area-at-the-picture-id1307668414?k=20&m=1307668414&s=612x612&w=0&h=-U0hqGn7ZaMAp-9gzFMoatLyCKuN8TYRBvhUZYLTvtg=">
+          </a>
+        </ul>
+      </div>
+      <div class="column columnFrame" style="max-width: 30%;">
+        <ul>
+          <a href="https://www.gettyimages.co.nz/detail/photo/ebisu-bridge-royalty-free-image/985550020">
+          <img src="https://media.gettyimages.com/photos/ebisu-bridge-picture-id985550020?k=20&m=985550020&s=612x612&w=0&h=wiZryX1OLkyy3azjUQXXFqlsYTIA4CpvFkFHvLIFr3w=">
+          </a></ul>
+        <ul>
+          <h3>Minami (Namba)</h3>
+            <p>Minami meaning South, due to its location being south of Osaka is a bustling place offering a myriad of dining and shopping places. The city's most famous entertainment district, accessible through multiple subway lines and a highway bus terminal.</p>
+        </ul>
+      </div>
+      <div class="column columnFrame" style="max-width: 30%;">
+        <ul>
+            <h3>Osaka Castle Park</h3>
+            <p>Also known as Osaka-jo koen in Japanese, is a large 2 square km park in the city center. Containing the famous Osaka Castle, several gardens and flora. Inside the castle you will find a museum and you can view important historical events.</p>
+            <br>
+        </ul>
+        <ul>
+          <a href="https://www.gettyimages.co.nz/detail/photo/osaka-castle-japan-royalty-free-image/171251144">
+          <img src="https://media.gettyimages.com/photos/osaka-castle-japan-picture-id171251144?k=20&m=171251144&s=612x612&w=0&h=tc6NXxnyjDuTj7E_i1jM571rO1aORtVrwy2aR-hhD_E=">
+          </a>
+      </ul>
+      </div>
+    </div>
   </div>
 </div>
 </body>
