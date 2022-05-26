@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Rubik&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:wght@300&family=Rubik&family=Source+Sans+Pro&display=swap');
 
   /*Smooth scrolling*/
   html {
@@ -12,9 +12,11 @@
   }
   /*Main header top left*/
   h1{
-    padding-left: 2%;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Kaushan Script', cursive;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.95);
+    font-size:3vw; 
+    color: white;
   }
   /*Headers are centered with a font size and font of Source Sans Pro*/
   h2{

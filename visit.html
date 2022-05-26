@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <!--© Vince Vagay-->
-  <!--This page took 3 Hours to code 3 Hours to add content-->
+  <!--This page took 5 Hours to code 3 Hours to add content-->
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,8 +12,8 @@
 
 <style>
     .flexbox{ 
-    width: 42%; 
-    margin-left: 26.5%;
+    width: 41%; 
+    margin-left: 27%;
     padding-right: 3%;
     padding-left: 3%;
     padding-top: 1.5%;
@@ -24,9 +24,7 @@
     height: 100%;
     margin-top: 20px;
     text-align: center;
-    z-index: 2;
-    transition: width 0.05s;
-    transition: margin-left 0.09s;
+    transition: margin-left 3.7s, width 4s;
     }
     /*Increase width and go left*/
     .increase{
@@ -67,27 +65,37 @@
       width: 100%;
     }
     iframe{
-      zoom:1.4;z-index: 1; margin-left:-10px; margin-top:-10px; width: 101.1%; height: 200px;
+      zoom:1.4;z-index: 1; margin-left:-10px; margin-top:-10px; width: 101.1%; height: 15.61vw;
     }
+    .transparent{
+      opacity: 0;
+      transition: opacity 1s;
+    }
+    #nav {
+  background-image: linear-gradient(to bottom right, #e12a2a, #7b0101);
+}
+.background{
+  background-color: #ffb7c5;
+  background-image: url(Images/JapanBack.png);
+}
 </style>
-<iframe src="background.html"></iframe>
 <!--Header contains logo and title-->
-<header id="header" class="header" style="margin-top:-242px">
+<header id="header" class="header" style="margin-top: -2%;">
     <!--For title of page-->
     <img class="non zLayer0" src="Images/JapanArch.png" alt="Header Image" style="max-width: 99%; padding-top: 2.6%; margin-left: 1%;">
     <div class="wrapper" style="margin-top: -10px; margin-right: -8px; margin-left: -8px;">
-        <h1 style="font-family: Verdana;font-size:3vw; color: white; margin-top: -14%">Beautiful <br> Japan</h1> 
+        <h1 style="margin-top: -14.5%">Beautiful <br> Japan</h1> 
         <br style="padding-bottom: 15%;">
     </div>
 </header>
 <!--Header ends here-->
+
 <!--Body starts here-->
-<body style="background-color: #ffb7c5;">
-</div> 
+<body class="background">
 <!--Navigation starts here-->
 <!--Links to parts of website-->
 <div class="nav" id="nav">
-    <div style="text-align: center; background-color: #bd1111; font-size: 2vw; padding-top: 0.2vw; padding-bottom: 1.3vw;">
+    <div style="text-align: center; font-size: 2vw; padding-top: 0.2vw; padding-bottom: 1.3vw;">
       <a class = "nav" href="index.html" style="color: white;">Home |</a> 
       <a class = "nav" href="theme.html" style="color: white;">| Destinations |</a> 
       <a class = "nav" href="parallax.html" style="color: white;">| Landscape |</a> 
@@ -131,23 +139,30 @@
   /*Js changes colour of background*/
   function increase() {
     var element = document.getElementById("myDiv");
+    flexbox.classList.remove("transparent")
     flexbox.classList.add("increase");
     element.style.backgroundColor = "white";
+    Pole.classList.add("transparent");
 }
 </script>
-
-
 <!--Navigation ends here-->
 
 <!--Start of flexboxes to divide webpage-->
 
+<h2 style="color: white; text-shadow: 2px 2px rgba(0, 0, 0, 0.575);"><br>I want to visit</h2>
+<div>
+  <img id="Pole"src="Images/JapanPole.png" style="width:99%; padding-left: 1%; margin-top: -15%;">
+</div>
+<div>
+  <img class="sticky"id="Leaves"src="Images/Fall.gif" style="width:99%; padding-left: 1%; margin-top: -15%; z-index: -1;">
+</div>
 <!--Each section follows the same uniformity: image on left, heading on right, text on Right below heading-->
-<div class="flexbox" id="flexbox" style="margin-top: 1%;">
+<div class="flexbox transparent" id="flexbox" style="margin-top: -54%;">
   <!--Header is centred with a large font size-->
   <div id="myDiv" style="font-size:1.5vw;text-align:left;background-color: #ffb7c5;">
-    <h1>I want to visit<br> Japan<br></h1>
+    <h2>Japan<br></h2>
     <br><br><br><br id="Section1"><br>
-    <h1>Tokyo</h1>
+    <h2>Tokyo</h2>
     <div class="row">
       <div class="column columnFrame" style="max-width: 30%;">
         <ul>
@@ -184,7 +199,7 @@
       </div>
     </div>
     <br id="Section2">
-    <h1>Kyoto</h1>
+    <h2>Kyoto</h2>
     <div class="row">
       <div class="column columnFrame" style="max-width: 30%;">
         <ul>
@@ -221,7 +236,7 @@
       </div>
     </div>
     <br id="Section3">
-    <h1>Osaka</h1>
+    <h2>Osaka</h2>
     <div class="row">
       <div class="column columnFrame" style="max-width: 30%;">
         <ul>
@@ -263,7 +278,7 @@
 <!--Body ends here-->
 <!--Link to scroll you back to top of page-->
 <div style="text-align: center;">
-<a style="color:#000000;" href="#header">Back to top</a>
+<a style="background-color: #bd1111; color:#ffffff; text-shadow: 1px 1px rgb(0, 0, 0);" href="#header">Back to top</a>
 <br><br><br>
 <!--Footer that travels with you at the bottom of page-->
 <footer style="background-color: #bd1111;">
