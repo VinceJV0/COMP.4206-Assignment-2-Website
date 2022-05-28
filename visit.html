@@ -13,15 +13,14 @@
 <style>
     .flexbox{ 
     width: 41%; 
-    margin-left: 27%;
+    margin-left: 30%;
     padding-right: 3%;
     padding-left: 3%;
     padding-top: 1.5%;
     display: flex;
     flex-wrap: wrap;
-    background-color: #bd1111;
-    border-radius: 10px 10px 10px 10px;
-    height: 100%;
+    background-color: #bd1111; 
+    background: linear-gradient(288deg, #bd1111 60%, rgba(123,1,1,1) 75%);
     margin-top: 20px;
     text-align: center;
     transition: margin-left 3.7s, width 4s;
@@ -71,13 +70,18 @@
       opacity: 0;
       transition: opacity 1s;
     }
-    #nav {
-  background-image: linear-gradient(to bottom right, #e12a2a, #7b0101);
-}
-.background{
-  background-color: #ffb7c5;
-  background-image: url(Images/JapanBack.png);
-}
+    .background{
+      background-color: #ffb7c5;
+      background-image: url(Images/JapanBack.png);
+      background-attachment: fixed;
+      background-position: 0px;
+    }
+    .nav{
+      background-image: linear-gradient(to bottom, #e12a2a, #7b0101);
+    }
+    footer{
+      background-image: linear-gradient(to bottom, #7b0101,#e12a2a);
+    }
 </style>
 <!--Header contains logo and title-->
 <header id="header" class="header" style="margin-top: -2%;">
@@ -94,16 +98,9 @@
 <body class="background">
 <!--Navigation starts here-->
 <!--Links to parts of website-->
-<div class="nav" id="nav">
-    <div style="text-align: center; font-size: 2vw; padding-top: 0.2vw; padding-bottom: 1.3vw;">
-      <a class = "nav" href="index.html" style="color: white;">Home |</a> 
-      <a class = "nav" href="theme.html" style="color: white;">| Destinations |</a> 
-      <a class = "nav" href="parallax.html" style="color: white;">| Landscape |</a> 
-      <a class = "nav" href="video.html" style="color: white;">| Videos |</a> 
-      <a class = "nav" href="gallery.html" style="color: white;">| Gallery |</a> 
-      <a class = "nav" href="visit.html" style="color: white;">| Visit |</a> 
-      <a class = "nav" href="vince.html" style="color: white;">| Vince |</a> 
-      <a class = "nav" href="references.html" style="color: white;">| References</a> 
+<div class="nav" id="nav" >
+    <div class="navdiv"style="text-align: center; font-size: 2vw; padding-top: 1vw; padding-bottom: 1vw;">
+      <a href="index.html" style="color: white; font-weight: bold; text-decoration: none;">Home |</a><a href="theme.html" style="color: white; font-weight: bold; text-decoration: none;">| Destinations |</a><a href="parallax.html" style="color: white; font-weight: bold; text-decoration: none;">| Landscape |</a><a href="video.html" style="color: white; font-weight: bold; text-decoration: none;">| Videos |</a><a href="gallery.html" style="color: white; font-weight: bold; text-decoration: none;">| Gallery |</a><a href="visit.html" style="color: white; font-weight: bold; text-decoration: none;">| Visit |</a><a href="vince.html" style="color: white; font-weight: bold; text-decoration: none;">| Vince |</a><a href="references.html" style="color: white; font-weight: bold; text-decoration: none;">| References</a> 
     </div>
     
 <!--Sidebar navigation, scrolls you to section on current page-->
@@ -124,7 +121,7 @@
   
   var nav = document.getElementById("nav");
   var sticky = nav.offsetTop;
-  
+
   function myFunction() {
     var element = document.getElementById("myDiv");
     if (window.pageYOffset > sticky) {
