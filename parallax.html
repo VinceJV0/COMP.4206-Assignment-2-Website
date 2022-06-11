@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <!--© Vince Vagay-->
-  <!--This page took 30 minutes to code-->
+  <!--This page took 3 hours to code and add content-->
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +15,45 @@ height: 100%;
 background-color: #ffffff;
 font-family: 'Rubik', sans-serif;
 }
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.footer {
+    font-family: 'Roboto', sans-serif;
+    padding: 3px;
+    padding-left: 10px;
+    padding-top:10px;
+    margin-left: -10px;
+    height: 4%;
+    width: 100.9%;
+    background-color: #8ac353;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    font-size: 1vw;
+    z-index: 100;
+    background-image: linear-gradient(to bottom, #538e1b, #8ac353);
+    transition: opacity 1s;
+  }
+  /*Contains sidebar*/
+  .container{
+    width:25px;
+    height: 100%;
+    background:rgba(0, 0, 0, 0);
+    position: fixed;
+    padding:0px 0px 0px 0px;
+    margin-top: -200px;
+    margin-left: -10px;
+    text-shadow: 2px 1px #000000;
+    opacity: 0%;
+    /*2 seconds for window to pop out 1 second to show on hover*/
+    transition: width 2s, opacity 1s;
+    z-index: 100;
+ }
+  /*Hidden unless user hovers over*/
+  /*Increases width on user hover*/
+ .container:hover{
+    opacity: 100%;
+    width: 225px;
+ }
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6{
   position: relative;
   opacity: 1;
   background-attachment: fixed;
@@ -24,20 +62,30 @@ font-family: 'Rubik', sans-serif;
   background-size: cover;
   margin-left:-10px;
   width: 101.4%;
+  min-height: 105%;
 }
 .bgimg-1 {
-  background-image: url("Images/Placeholder1080p.png");
-  min-height: 100%;
+  background-image: url("https://wallpapercave.com/wp/wp2616264.jpg");
 }
 
 .bgimg-2 {
-  background-image: url("Images/Placeholder1080p.png");
-  min-height: 400px;
+  background-image: url("https://spinthewindrose.com/wp-content/uploads/2017/02/Hooker-Valley-Mount-Cook-spinthewindrose.com_.jpg");
 }
 
 .bgimg-3 {
-  background-image: url("Images/Placeholder1080p.png");
-  min-height: 400px;
+  background-image: url("https://live.staticflickr.com/65535/8167990319_e9e27f562b_4k.jpg");
+}
+
+.bgimg-4 {
+  background-image: url("https://cdn5.nzgeo.com/2008/11/94_Mackenzie_07-1600x1066.jpg");
+}
+
+.bgimg-5 {
+  background-image: url("https://inspirationseek.com/wp-content/uploads/2014/06/Tongariro-National-Park-New-Zealand.jpg");
+}
+
+.bgimg-6 {
+  background-image: url("https://yogahernebay.co.nz/wp-content/uploads/2016/08/piha-beach-northland-8ff8a9f0-424b-4385-ba27-060042f285ad.jpg");
 }
 
 .caption {
@@ -46,15 +94,27 @@ font-family: 'Rubik', sans-serif;
   top: 50%;
   width: 100%;
   text-align: center;
-  color: #0000;
+  text-shadow: 2px 2px #000000;
+  color: rgba(255, 255, 255, 0);
+  opacity: 0%;
+  transition: opacity 1s;
 }
 
-.caption span.border {
-  background-color: #abfe5e;
-  color: #000000;
+.caption:hover{
+  opacity: 100%;
+}
+
+.hide{
+  opacity: 0%;
+}
+
+span.border {
+  background-color: rgba(0, 0, 0, 0.441);
+  opacity: 90%;
   font-size: 25px;
-  letter-spacing: 10px;
+  letter-spacing: 5px;
   padding: 18px;
+  border-radius: 5px;
 }
 </style>
 <!--Header contains logo and title-->
@@ -62,7 +122,7 @@ font-family: 'Rubik', sans-serif;
 <header id="header" class="header">
     <!--For title of page-->
     <div class="flexbox wrapper" style="margin-top: -10px; margin-right: -8px; margin-left: -8px;">
-      <h1 style="margin-top: -10%;">Beautiful <br> New Zealand</h1> 
+      <h1 style="margin-top: -10%;">Beautiful <br> New Zealand <br> Landscape</h1>
     </div>
     <div class="zLayer99">
         <img  class="non"src="Images/HeaderLogo.png" alt="HeaderLogo" style="width: 20%; margin-left: -10px; margin-top:-100%"/>
@@ -70,7 +130,7 @@ font-family: 'Rubik', sans-serif;
 </header>
 <!--Header ends here-->
 <!--Body starts here-->
-<body>
+<body onload="myFunction();">
 </div> 
 <!--Navigation starts here-->
 <!--Links to parts of website-->
@@ -85,51 +145,111 @@ font-family: 'Rubik', sans-serif;
       <a class = "nav" href="vince.html" style="color: white;">| Vince |</a> 
       <a class = "nav" href="references.html" style="color: white;">| References</a> 
     </div>
-    
+</div>
 <!--Sidebar navigation, scrolls you to section on current page-->
-<div class="container" style="margin-top: 1%;">
+<!--This part is hidden unless the user hovers over left of page-->
+<div class="container" id="container"style="padding-top: 13%; padding-bottom: 1%; margin-top: -25%">
   <nav>
       <ul>
-          <li class = "link"><a href="#Section1" style="color: white">Section 1</a></li>
-          <li class = "link"><a href="#Section2" style="color: white">Section 2</a></li>
-          <li class = "link"><a href="#Section3" style="color: white">Section 3</a></li>
-          <li class = "link"><a href="#Section4" style="color: white">Section 4</a></li>
-          <li class = "link"><a href="#Section5" style="color: white">Section 5</a></li>
+          <li class = "link"><a href="#IMG1" style="color: white">Fiordland National Park</a></li>
+          <li class = "link"><a href="#IMG2" style="color: white">Aoraki/Mt Cook National Park</a></li>
+          <li class = "link"><a href="#IMG3" style="color: white">The Remarkables</a></li>
+          <li class = "link"><a href="#IMG4" style="color: white">The Mackenzie Basin</a></li>
+          <li class = "link"><a href="#IMG5" style="color: white">Tongariro National Park</a></li>
+          <li class = "link"><a href="#IMG6" style="color: white">Piha</a></li>
       </ul>
   </nav>
 </div>
-</div>
-<!--Js to make nav scroll with page-->
+
+<!--Js to make footer hide when scrolled past nav-->
 <script>
   window.onscroll = function() {myFunction()};
-  
   var nav = document.getElementById("nav");
   var sticky = nav.offsetTop;
+  var element = document.getElementById("footer");
   
   function myFunction() {
     if (window.pageYOffset > sticky) {
-      nav.classList.add("sticky");
+      nav.classList.add("hide");
+      footer.classList.add("hide");
     } else {
-      nav.classList.remove("sticky");
+      nav.classList.remove("hide");
+      footer.classList.remove("hide");
     }
   }
 </script>
 <!--Navigation ends here-->
-    <div class="bgimg-1">
-        <div class="caption">
-        <span class="border">New Zealand Landscape</span>
+<!--Parallax begins here-->
+<!--Text © copyrighted and referenced from: https://theculturetrip.com/pacific/new-zealand/articles/15-landscapes-youll-only-find-in-new-zealand/-->
+    <div class="bgimg-1" id="IMG1">
+      <!--Hidden caption, if the user hovers over the center of the image, it will show-->
+      <div class="caption">
+        <span class="border" style="color: white">Fiordland National Park</span>
         </div>
       </div>
 
       <div style="color: #777;background-color:white;text-align:center;padding:50px 80px; word-wrap: break-word;">
-        <h3 style="text-align:center;">Heading</h3>
-        <p style="padding-left: 10%; text-align: center;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <h3 style="text-align:center;">Fiordland National Park</h3>
+        <p style="padding-left: 10%; text-align: center;">A u-shaped valley created by glaciers that has been submerged by the sea. The fourteen fiords that are round this south-west corner of the South Island were formed over 100,000 years, with the finishing features added just 10,000 years ago during the most recent ice age.
+          Spectacular waterfalls cascade constantly on both sides of the fiords as the region's abundant rainfall makes its way to the sea.
+          <br><br>
+          Milford Sound, dubbed the "Eighth Wonder of the World" by Rudyard Kipling, is constantly magnificent, with daily scenic flights and cruises revealing its magnificence to tourists.
+          </p>
       </div>
-      
-      <div class="bgimg-1">
+
+      <div class="bgimg-2" id="IMG2">
         <div class="caption">
-        <span class="border">COOL!</span>
+        <span class="border" style="color: white">Aoraki/Mt Cook National Park</span>
         </div>
+      </div>
+
+      <div style="color: #777;background-color:white;text-align:center;padding:50px 80px; word-wrap: break-word;">
+        <h3 style="text-align:center;">Aoraki/Mt Cook National Park</h3>
+        <p style="padding-left: 10%; text-align: center;">This national park is home to a number of exquisite mountains, including the two tallest in New Zealand: Aoraki/Mt Cook and Mt Tasman. The area is also home to two glaciers, the Hooker and the Tasman, and has a range of walking trails for hikers of all levels.</p>
+      </div>
+
+      <div class="bgimg-3" id="IMG3">
+        <div class="caption">
+        <span class="border" style="color: white">The Remarkables</span>
+        </div>
+      </div>
+
+      <div style="color: #777;background-color:white;text-align:center;padding:50px 80px; word-wrap: break-word;">
+        <h3 style="text-align:center;">The Remarkables</h3>
+        <p style="padding-left: 10%; text-align: center;">The aptly-named Remarkables mountain range dominates the beautiful backdrops around Queenstown. These majestic mountains are quite popular with local skiers in the winter months, and a year-round attraction for landscape lovers visiting New Zealand's adventure capital.</p>
+      </div>
+
+      <div class="bgimg-4" id="IMG4">
+        <div class="caption">
+        <span class="border" style="color: white">The Mackenzie Basin</span>
+        </div>
+      </div>
+
+      <div style="color: #777;background-color:white;text-align:center;padding:50px 80px; word-wrap: break-word;">
+        <h3 style="text-align:center;">The Mackenzie Basin</h3>
+        <p style="padding-left: 10%; text-align: center;">The Mackenzie Basin in the Canterbury region is home to three glacially-fed lakes: Tekapo, Pukaki, and Ohau. These breathtaking lowland lakes are doused in a crystal-blue tinge as they are fed into the Godley, Tasman and Hopkins Rivers, which subsequently flow into the Southern Alps. Also known as Mackenzie Country, the basin is the largest in New Zealand.</p>
+      </div>
+
+      <div class="bgimg-5" id="IMG5">
+        <div class="caption">
+        <span class="border" style="color: white">Tongariro National Park</span>
+        </div>
+      </div>
+
+      <div style="color: #777;background-color:white;text-align:center;padding:50px 80px; word-wrap: break-word;">
+        <h3 style="text-align:center;">Tongariro National Park</h3>
+        <p style="padding-left: 10%; text-align: center;">Tongariro National Park is a World Heritage Site that's home to volcanoes, active craters, glacial lakes and astonishing alpine views have made this site a must-visit for hikers. In fact, the park is where you'll find one of New Zealand's ever-popular Great Walks: the alpine-based Tongariro Northern Circuit. <br> Famous for its emerald lakes.</p>
+      </div>
+
+      <div class="bgimg-6" id="IMG6">
+        <div class="caption">
+        <span class="border" style="color: white">Piha</span>
+        </div>
+      </div>
+
+      <div style="color: #777;background-color:white;text-align:center;padding:50px 80px; word-wrap: break-word;">
+        <h3 style="text-align:center;">Piha</h3>
+        <p style="padding-left: 10%; text-align: center;">Piha is the most famous of Auckland's beautiful black-sand west coast beaches. Renowned for its cinematic appearance in the dramatic feature film The Piano, Piha's natural remoteness makes it a desirable escape from the city rush. The area is surrounded by lush rain forests, along with comprising two surf beaches, a sheltered lagoon, a waterfall and the Lion Rock that separates Piha's northern and southern ends.</p>
       </div>
 </body>
 <!--Body ends here-->
@@ -138,7 +258,7 @@ font-family: 'Rubik', sans-serif;
 <a style="color:#000000;" href="#header">Back to top</a>
 <br><br><br>
 <!--Footer that travels with you at the bottom of page-->
-<footer style="width:99%;">
+<footer class="footer" id="footer" style="width:99%;">
 <!--Copyrighted by me-->
 <span style="float: right; margin-right:25px;">© Vince Vagay | 2022</span>
 </footer>
